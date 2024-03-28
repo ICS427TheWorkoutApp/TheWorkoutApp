@@ -5,6 +5,7 @@ import { ProfilesInterests } from '../../api/profiles/ProfilesInterests';
 import { ProfilesProjects } from '../../api/profiles/ProfilesProjects';
 import { Projects } from '../../api/projects/Projects';
 import { ProjectsInterests } from '../../api/projects/ProjectsInterests';
+import { Workouts } from '../../api/workouts/Workouts';
 
 /** Define a publication to publish all interests. */
 Meteor.publish(Interests.userPublicationName, () => Interests.collection.find());
@@ -29,6 +30,13 @@ Meteor.publish(ProjectsInterests.userPublicationName, () => ProjectsInterests.co
 Meteor.publish(null, function () {
   if (this.userId) {
     return Meteor.roleAssignment.find({ 'user._id': this.userId });
+  }
+  return this.ready();
+});
+
+Meteor.publish(Workouts.userPublicationName, function () {
+  if (this.userId) {
+    return Workouts.collection.find();
   }
   return this.ready();
 });

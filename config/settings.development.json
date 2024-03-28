@@ -1,4 +1,15 @@
 {
+  "defaultWorkouts": [
+    {
+      "name": "Bench Press",
+      "bodyPart": "Chest",
+      "diffculty": "High",
+      "details": "The bench press is a fundamental strength training exercise that primarily targets the pectoralis major muscles of the chest, while also engaging the anterior deltoids, triceps, and muscles of the back as stabilizers. This compound movement is performed on a flat bench, where the lifter lies back, feet flat on the ground, gripping the barbell with hands slightly wider than shoulder-width apart. The exercise begins with the barbell racked above the chest, arms extended. The lifter then lowers the barbell to the mid-chest level in a controlled manner before pressing it back up to the starting position, fully extending the arms without locking the elbow.",
+      "video": "https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/S36BnIU/videoblocks-6099b96572157c5be802a6a2_hpfvtu9et__017c7b2b5e879422c4414feae99950f2__P360.mp4",
+      "createdAt": "2024-02-25T18:00:00Z",
+      "owner": "admin@foo.com"
+    }
+  ],
   "defaultProfiles": [
     {
       "firstName": "Philip",

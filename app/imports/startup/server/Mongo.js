@@ -7,6 +7,7 @@ import { Profiles } from '../../api/profiles/Profiles';
 import { ProfilesProjects } from '../../api/profiles/ProfilesProjects';
 import { ProfilesInterests } from '../../api/profiles/ProfilesInterests';
 import { Interests } from '../../api/interests/Interests';
+import { Workouts } from '../../api/workouts/Workouts';
 
 /* eslint-disable no-console */
 
@@ -73,4 +74,16 @@ if ((Meteor.settings.loadAssetsFile) && (Meteor.users.find().count() < 7)) {
   const jsonData = JSON.parse(Assets.getText(assetsFileName));
   jsonData.profiles.map(profile => addProfile(profile));
   jsonData.projects.map(project => addProject(project));
+}
+
+const addWorkout = (workout) => {
+  console.log(`  Adding: ${workout.name} (${workout.owner})`);
+  Workouts.collection.insert(workout);
+};
+
+if (Workouts.collection.find().count() === 0) {
+  if (Meteor.settings.defaultWorkouts) {
+    console.log('Creating default workouts.');
+    Meteor.settings.defaultWorkouts.forEach(data => addWorkout(data));
+  }
 }
