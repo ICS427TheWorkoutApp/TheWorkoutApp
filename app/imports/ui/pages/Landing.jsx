@@ -8,7 +8,7 @@ const Landing = () => (
     <div className="landing-green-background">
       <Container className="text-center">
         <h1 style={{ paddingTop: '20px', color: 'white', fontSize: '36pt' }}>
-          Welcome to Bowfolios
+          Welcome to the Workout App
         </h1>
         <h3 style={{ paddingBottom: '20px', color: 'white' }}>
           Profiles, projects, and interest areas for the UH Community
