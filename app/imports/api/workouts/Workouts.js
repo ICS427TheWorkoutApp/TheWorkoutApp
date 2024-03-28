@@ -14,7 +14,10 @@ class WorkoutsCollection {
       bodyPart: String,
       diffculty: String,
       details: String,
-      video: String,
+      video: {
+        type: String,
+        optional: true,
+      },
       createdAt: Date,
       owner: String,
     });

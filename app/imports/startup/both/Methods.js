@@ -5,11 +5,12 @@ import { Profiles } from '../../api/profiles/Profiles';
 import { ProfilesInterests } from '../../api/profiles/ProfilesInterests';
 import { ProfilesProjects } from '../../api/profiles/ProfilesProjects';
 import { ProjectsInterests } from '../../api/projects/ProjectsInterests';
+import { Workouts } from '../../api/workouts/Workouts';
 
 cloudinary.config({
   cloud_name: 'YOUR-KEY-HERE',
   api_key: 'YOUR-KEY-HERE',
-  api_secret: 'YOUR-KEY-HERE',
+  api_secret: 'YOUR-KEY-HERE'
 });
 
 /**
@@ -70,6 +71,14 @@ Meteor.methods({
       participants.map((participant) => ProfilesProjects.collection.insert({ project: name, profile: participant }));
     }
   },
+  // eslint-disable-next-line meteor/audit-argument-checks
+  'workouts.insert'(workoutData) {
+    if (!this.userId) {
+      throw new Meteor.Error('Not authorized.');
+    }
+    Workouts.collection.insert(workoutData);
+  },
+
   // eslint-disable-next-line meteor/audit-argument-checks
   async uploadVideo(videoData) {
     this.unblock();
