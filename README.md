@@ -7,6 +7,7 @@ We are The Workout App and our team is made up of two members. Zhuocheng Gan and
 March 28th Project Status:
 
 Progress: 
+
   - Webpage Layout Improvement
       - Navbar
       - Footer
@@ -15,10 +16,13 @@ Progress:
       - Add Workout
       - Workout Database
       - Workout Display.
+      - 
 Link: [(https://github.com/ICS427TheWorkoutApp/TheWorkoutApp)](https://github.com/ICS427TheWorkoutApp/TheWorkoutApp)
+
 Pending: What is left to do now in order to complete the application as per the project design goals.
 Roles and responsibilities: List the team members still on the project. Under each name outline as applies:
 New completions (if any...otherwise you can just note any progress made after previous assignment was submitted)
+
   - Zhuocheng Gan
     - Webpage Layout Improvement
     - Workout Collection
@@ -26,6 +30,7 @@ New completions (if any...otherwise you can just note any progress made after pr
     - Report on verification process
       
 Current: What the team member is handling now.
+
     - Zhuocheng Gan
       - Functionality Implementation
       - Minor UI Designs
@@ -34,6 +39,7 @@ Current: What the team member is handling now.
       - Minor UI Designs
         
 Next: What the team member will handle after current task
+
   - Zhuocheng Gan
     - Webpage Layout Improvement
     - Workout Collection
