@@ -26,6 +26,7 @@ body {
   color: var(--bowfolio-navbar-text);
 }
 
+
 /* When logged in we highlight the selected route. */
 .bg-dark a.nav-link.active {
   color: var(--bowfolio-navbar-highlight-text);

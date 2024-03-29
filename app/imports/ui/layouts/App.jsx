@@ -17,6 +17,7 @@ import Home from '../pages/Home';
 import Filter from '../pages/Filter';
 import AddProject from '../pages/AddProject';
 import AddWorkout from '../pages/AddWorkout';
+import WorkoutDisplay from '../pages/WorkoutDisplay';
 
 /* Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 const App = () => (
@@ -32,6 +33,7 @@ const App = () => (
         <Route path="/profiles" element={<Profiles />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/addworkout" element={<ProtectedRoute><AddWorkout /></ProtectedRoute>} />
+        <Route path="/workout" element={<ProtectedRoute><WorkoutDisplay /></ProtectedRoute>} />
         <Route path="/home" element={<ProtectedRoute><Home /></ProtectedRoute>} />
         <Route path="/filter" element={<ProtectedRoute><Filter /></ProtectedRoute>} />
         <Route path="/addproject" element={<ProtectedRoute><AddProject /></ProtectedRoute>} />
