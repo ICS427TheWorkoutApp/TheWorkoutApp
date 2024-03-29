@@ -12,7 +12,10 @@ class WorkoutsCollection {
     this.schema = new SimpleSchema({
       name: String,
       bodyPart: String,
-      diffculty: String,
+      diffculty: {
+        type: String,
+        allowedValues: ['Very Easy', 'Easy', 'Medium', 'Hard'],
+      },
       details: String,
       video: {
         type: String,

@@ -10,7 +10,7 @@ import { Workouts } from '../../api/workouts/Workouts';
 cloudinary.config({
   cloud_name: 'YOUR-KEY-HERE',
   api_key: 'YOUR-KEY-HERE',
-  api_secret: 'YOUR-KEY-HERE'
+  api_secret: 'YOUR-KEY-HERE',
 });
 
 /**

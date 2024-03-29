@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Meteor } from 'meteor/meteor';
 import { Container, Row, Col, Card } from 'react-bootstrap';
-import { AutoForm, ErrorsField, HiddenField, LongTextField, SubmitField, TextField } from 'uniforms-bootstrap5';
+import { AutoForm, ErrorsField, HiddenField, LongTextField, SelectField, SubmitField, TextField } from 'uniforms-bootstrap5';
 import swal from 'sweetalert';
 import SimpleSchema2Bridge from 'uniforms-bridge-simple-schema-2';
 import FileField from '../components/FileField';
@@ -55,13 +55,13 @@ const AddWorkout = () => {
       <Container className="py-3">
         <Row className="justify-content-center align-items-center" style={{ minHeight: '80vh' }}>
           <Col xs={5}>
-            <Col className="text-center"><h2>Add Profile</h2></Col>
+            <Col className="text-center"><h2>Add Workout</h2></Col>
             <AutoForm ref={ref => { fRef = ref; }} schema={bridge} onSubmit={data => submit(data, fRef)}>
               <Card style={{ backgroundColor: 'white', border: 'none' }}>
                 <Card.Body>
+                  <SelectField inputClassName="border-dark" name="diffculty" placeholder="Please select" />
                   <TextField inputClassName="border-dark" name="name" />
                   <TextField inputClassName="border-dark" name="bodyPart" />
-                  <TextField inputClassName="border-dark" name="diffculty" />
                   <div className="mb-3">
                     <FileField name="Video" onChange={handleVideoChange} />
                   </div>
