@@ -1,4 +1,51 @@
 {
+  "defaultWorkouts": [
+    {
+      "name": "Bench Press",
+      "bodyPart": "Chest",
+      "diffculty": "Hard",
+      "details": "The bench press is a fundamental strength training exercise that primarily targets the pectoralis major muscles of the chest, while also engaging the anterior deltoids, triceps, and muscles of the back as stabilizers. This compound movement is performed on a flat bench, where the lifter lies back, feet flat on the ground, gripping the barbell with hands slightly wider than shoulder-width apart. The exercise begins with the barbell racked above the chest, arms extended. The lifter then lowers the barbell to the mid-chest level in a controlled manner before pressing it back up to the starting position, fully extending the arms without locking the elbow.",
+      "video": "https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/S36BnIU/videoblocks-6099b96572157c5be802a6a2_hpfvtu9et__017c7b2b5e879422c4414feae99950f2__P360.mp4",
+      "createdAt": "2024-02-25T18:00:00Z",
+      "owner": "admin@foo.com"
+    },
+    {
+      "name": "Squart",
+      "bodyPart": "Quadriceps/Gluteus Maximus",
+      "diffculty": "Hard",
+      "details": "Squats are a compound exercise that engages multiple muscle groups across the body, primarily targeting the quadriceps, hamstrings, glutes, and lower back. They are a versatile movement that can be performed with or without weights and are fundamental to strength training, bodybuilding, and general fitness routines. The basic squat involves a series of movements that mimic the action of sitting down and standing up, with a focus on maintaining proper form to maximize effectiveness and minimize the risk of injury",
+      "video": "https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/HAo-4oX79l1fjgkdk/videoblocks-63cf53206547fc3cd74f967a_rntsxcu3j__c37b2a2a640838a11d2096374c553e9f__P360.mp4",
+      "createdAt": "2024-02-25T18:00:00Z",
+      "owner": "admin@foo.com"
+    },
+    {
+      "name": "Lateral Pull Down",
+      "bodyPart": "Upper Back",
+      "diffculty": "Medium",
+      "details": "The lat pulldown is a strength training exercise designed to develop the latissimus dorsi muscle. It also involves several other muscles including the biceps, trapezius, and the muscles of the back and shoulders. This exercise is performed on a cable machine with a wide bar attached to the top pulley. ",
+      "video": "https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/SNv7Pyhimz0q0vg/videoblocks-357z_untitled00094665_bpnchwid5__630585c9cde0fc9ac6a9a0cda3c5627c__P360.mp4",
+      "createdAt": "2024-02-25T18:00:00Z",
+      "owner": "admin@foo.com"
+    },
+    {
+      "name": "Shoulder Press",
+      "bodyPart": "Upper Shoulder",
+      "diffculty": "Medium",
+      "details": "The shoulder press, also known as the overhead press, is a fundamental weight training exercise that primarily targets the deltoid muscles in the shoulders. It also engages the triceps, upper chest, and core for stabilization. This exercise can be performed with dumbbells, a barbell, or on a machine.",
+      "video": "https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/rKqc8upnUkb8ehmf4/videoblocks-10_b8adkqrjd__bb9116340cedf5b772e2ab383283dd02__P360.mp4",
+      "createdAt": "2024-02-25T18:00:00Z",
+      "owner": "admin@foo.com"
+    },
+    {
+      "name": "Bicep Curl",
+      "bodyPart": "Bicep",
+      "diffculty": "Medium",
+      "details": "The bicep curl is a resistance training exercise that primarily targets the biceps brachii, the muscle in the front of the upper arm. Secondary muscle groups include the brachialis and brachioradialis in the lower arm. Bicep curls can be performed with dumbbells, a barbell, or resistance bands",
+      "video": "https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/HAo-4oX79l1fjgkdk/videoblocks-63d188154735983a1ff6c2d5_s589ctqts__71c751273a8deaed50584d05b359f516__P360.mp4",
+      "createdAt": "2024-02-25T18:00:00Z",
+      "owner": "admin@foo.com"
+    }
+  ],
   "defaultProfiles": [
     {
       "firstName": "Philip",

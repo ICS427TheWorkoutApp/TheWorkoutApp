@@ -1,9 +1,17 @@
 import { Meteor } from 'meteor/meteor';
+import cloudinary from 'cloudinary';
 import { Projects } from '../../api/projects/Projects';
 import { Profiles } from '../../api/profiles/Profiles';
 import { ProfilesInterests } from '../../api/profiles/ProfilesInterests';
 import { ProfilesProjects } from '../../api/profiles/ProfilesProjects';
 import { ProjectsInterests } from '../../api/projects/ProjectsInterests';
+import { Workouts } from '../../api/workouts/Workouts';
+
+cloudinary.config({
+  cloud_name: 'YOUR-KEY-HERE',
+  api_key: 'YOUR-KEY-HERE',
+  api_secret: 'YOUR-KEY-HERE',
+});
 
 /**
  * In Bowfolios, insecure mode is enabled, so it is possible to update the server's Mongo database by making
@@ -61,6 +69,26 @@ Meteor.methods({
     }
     if (participants) {
       participants.map((participant) => ProfilesProjects.collection.insert({ project: name, profile: participant }));
+    }
+  },
+  // eslint-disable-next-line meteor/audit-argument-checks
+  'workouts.insert'(workoutData) {
+    if (!this.userId) {
+      throw new Meteor.Error('Not authorized.');
+    }
+    Workouts.collection.insert(workoutData);
+  },
+
+  // eslint-disable-next-line meteor/audit-argument-checks
+  async uploadVideo(videoData) {
+    this.unblock();
+
+    try {
+      // Specify the resource_type as 'video' to ensure Cloudinary handles it as a video
+      const result = await cloudinary.v2.uploader.upload(videoData, { resource_type: 'video' });
+      return result.secure_url;
+    } catch (error) {
+      throw new Meteor.Error('cloudinary-upload-failed', 'Error uploading video to Cloudinary');
     }
   },
 });
