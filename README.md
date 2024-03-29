@@ -24,6 +24,7 @@ New completions (if any...otherwise you can just note any progress made after pr
     - Workout Collection
   - Conor Sonoda
     - Report on verification process
+      
 Current: What the team member is handling now.
     - Zhuocheng Gan
       - Functionality Implementation
@@ -31,6 +32,7 @@ Current: What the team member is handling now.
   - Conor Sonoda
       - Functionality Implementation
       - Minor UI Designs
+        
 Next: What the team member will handle after current task
   - Zhuocheng Gan
     - Webpage Layout Improvement
