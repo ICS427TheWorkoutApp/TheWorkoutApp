@@ -7,40 +7,43 @@ March 28th Project Status:
 Progress:
 
 Webpage Layout Improvement
-  - Navbar
-  - Footer
-  - Landing Page Designs
+Navbar
+Footer
+Landing Page Designs
 Workout Collection
-  - Add Workout
-  - Workout Database
-  - Workout Display.
+Add Workout
+Workout Database
+Workout Display.
 
 Link: (https://github.com/ICS427TheWorkoutApp/TheWorkoutApp)
 
 New completions (if any...otherwise you can just note any progress made after previous assignment was submitted)
 
-Zhuocheng Gan
+- Zhuocheng Gan
   - Webpage Layout Improvement
   - Workout Collection
-Conor Sonoda
+  
+- Conor Sonoda
+  - Page/Collection Work
   - Report on verification process
 
 Current: What the team member is handling now.
 
-Zhuocheng Gan
+- Zhuocheng Gan
   - More Functionality Implementation
   - Minor UI Designs
-Conor Sonoda
-  - 
-  - 
+    
+- Conor Sonoda
+  - Analysis work
+  - Documentation
 
 Next: What the team member will handle after current task
 
-Zhuocheng Gan
+- Zhuocheng Gan
   - Cleaning up unused code 
   - Security Implementation
-Conor Sonoda
-  - 
+    
+- Conor Sonoda 
   - Deployment
 
 This Project is built using the UH Bowfolios template. For more information on the Project. Please see the following link. For details, please see http://bowfolios.github.io/.
