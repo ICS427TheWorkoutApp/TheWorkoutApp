@@ -19,8 +19,6 @@ Progress:
       - 
 Link: [(https://github.com/ICS427TheWorkoutApp/TheWorkoutApp)](https://github.com/ICS427TheWorkoutApp/TheWorkoutApp)
 
-Pending: What is left to do now in order to complete the application as per the project design goals.
-Roles and responsibilities: List the team members still on the project. Under each name outline as applies:
 New completions (if any...otherwise you can just note any progress made after previous assignment was submitted)
 
   - Zhuocheng Gan
@@ -31,7 +29,7 @@ New completions (if any...otherwise you can just note any progress made after pr
       
 Current: What the team member is handling now.
 
-    - Zhuocheng Gan
+  - Zhuocheng Gan
       - Functionality Implementation
       - Minor UI Designs
   - Conor Sonoda
