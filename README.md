@@ -24,7 +24,7 @@ New completions (if any...otherwise you can just note any progress made after pr
   - Workout Collection
   
 - Conor Sonoda
-  - Page/Collection Work
+  - Fixed Build Error
   - Report on verification process
 
 Current: What the team member is handling now.
@@ -34,8 +34,9 @@ Current: What the team member is handling now.
   - Minor UI Designs
     
 - Conor Sonoda
-  - Analysis work
-  - Documentation
+  - Created Exercise Collection
+  - Created on Pages for Exercises
+
 
 Next: What the team member will handle after current task
 
@@ -44,6 +45,7 @@ Next: What the team member will handle after current task
   - Security Implementation
     
 - Conor Sonoda 
+  - Continue Working on Exercises
   - Deployment
 
 This Project is built using the UH Bowfolios template. For more information on the Project. Please see the following link. For details, please see http://bowfolios.github.io/.
