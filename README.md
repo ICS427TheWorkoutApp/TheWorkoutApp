@@ -16,11 +16,11 @@ Pending:
 - Deployment
 - Minor UI changes
 
-- Zhuocheng Gan
+Zhuocheng Gan
   - Web development
   - Technical Writing
     
-- Conor Sonoda
+Conor Sonoda
   - Web development
   - Technical Writing
 
