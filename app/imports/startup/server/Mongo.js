@@ -1,13 +1,9 @@
 import { Meteor } from 'meteor/meteor';
 import { Accounts } from 'meteor/accounts-base';
 import { Roles } from 'meteor/alanning:roles';
-import { Projects } from '../../api/projects/Projects';
-import { ProjectsInterests } from '../../api/projects/ProjectsInterests';
 import { Profiles } from '../../api/profiles/Profiles';
-import { ProfilesProjects } from '../../api/profiles/ProfilesProjects';
-import { ProfilesInterests } from '../../api/profiles/ProfilesInterests';
-import { Interests } from '../../api/interests/Interests';
 import { Workouts } from '../../api/workouts/Workouts';
+import { Events } from '../../api/events/Events';
 
 /* eslint-disable no-console */
 
@@ -20,41 +16,20 @@ function createUser(email, role) {
   }
 }
 
-/** Define an interest.  Has no effect if interest already exists. */
-function addInterest(interest) {
-  Interests.collection.update({ name: interest }, { $set: { name: interest } }, { upsert: true });
-}
-
 /** Defines a new user and associated profile. Error if user already exists. */
-function addProfile({ firstName, lastName, bio, title, interests, projects, picture, email, role }) {
+function addProfile({ firstName, lastName, bio, picture, email, role }) {
   console.log(`Defining profile ${email}`);
   // Define the user in the Meteor accounts package.
   createUser(email, role);
   // Create the profile.
-  Profiles.collection.insert({ firstName, lastName, bio, title, picture, email });
-  // Add interests and projects.
-  interests.map(interest => ProfilesInterests.collection.insert({ profile: email, interest }));
-  projects.map(project => ProfilesProjects.collection.insert({ profile: email, project }));
-  // Make sure interests are defined in the Interests collection if they weren't already.
-  interests.map(interest => addInterest(interest));
-}
-
-/** Define a new project. Error if project already exists.  */
-function addProject({ name, homepage, description, interests, picture }) {
-  console.log(`Defining project ${name}`);
-  Projects.collection.insert({ name, homepage, description, picture });
-  interests.map(interest => ProjectsInterests.collection.insert({ project: name, interest }));
-  // Make sure interests are defined in the Interests collection if they weren't already.
-  interests.map(interest => addInterest(interest));
+  Profiles.collection.insert({ firstName, lastName, bio, picture, email });
 }
 
 /** Initialize DB if it appears to be empty (i.e. no users defined.) */
 if (Meteor.users.find().count() === 0) {
-  if (Meteor.settings.defaultProjects && Meteor.settings.defaultProfiles) {
+  if (Meteor.settings.defaultProfiles) {
     console.log('Creating the default profiles');
     Meteor.settings.defaultProfiles.map(profile => addProfile(profile));
-    console.log('Creating the default projects');
-    Meteor.settings.defaultProjects.map(project => addProject(project));
   } else {
     console.log('Cannot initialize the database!  Please invoke meteor with a settings file.');
   }
@@ -73,7 +48,6 @@ if ((Meteor.settings.loadAssetsFile) && (Meteor.users.find().count() < 7)) {
   console.log(`Loading data from private/${assetsFileName}`);
   const jsonData = JSON.parse(Assets.getText(assetsFileName));
   jsonData.profiles.map(profile => addProfile(profile));
-  jsonData.projects.map(project => addProject(project));
 }
 
 const addWorkout = (workout) => {
@@ -85,5 +59,17 @@ if (Workouts.collection.find().count() === 0) {
   if (Meteor.settings.defaultWorkouts) {
     console.log('Creating default workouts.');
     Meteor.settings.defaultWorkouts.forEach(data => addWorkout(data));
+  }
+}
+
+const addEvents = (event) => {
+  console.log(`  Adding: ${event.name} (${event.owner})`);
+  Events.collection.insert(event);
+};
+
+if (Events.collection.find().count() === 0) {
+  if (Meteor.settings.defaultEvents) {
+    console.log('Creating default events.');
+    Meteor.settings.defaultEvents.forEach(data => addEvents(data));
   }
 }

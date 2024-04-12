@@ -25,7 +25,10 @@ const NavBar = () => {
           <Nav className="me-auto justify-content-start">
             {currentUser ? (
               [<Nav.Link as={NavLink} to="/workout">Workout</Nav.Link>,
-                <Nav.Link as={NavLink} to="/addworkout">Add Workout</Nav.Link>]
+                <Nav.Link as={NavLink} to="/addworkout">Add Workout</Nav.Link>,
+                <Nav.Link as={NavLink} to="/event">Event</Nav.Link>,
+                <Nav.Link as={NavLink} to="/addevent">Add Event</Nav.Link>,
+                <Nav.Link as={NavLink} to="/profiles">Profile</Nav.Link>]
             ) : ''}
           </Nav>
           <Nav className="justify-content-end">
