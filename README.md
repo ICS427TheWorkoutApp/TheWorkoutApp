@@ -2,6 +2,10 @@ Technical Document for the Workout App [https://docs.google.com/document/d/1BQHD
 
 We are The Workout App and our team is made up of two members. Zhuocheng Gan and Connor Sonoda. Our goal with The Workout App is for users to create their workout from the database, add different types of exercises, view pre-made workout plans and descriptions of different workouts all with the goal of helping their users achieve their goals. This is a Web Program and Website that are created from HTML, Javascript, CSS, Meteor, React.
 
+
+
+
+
 Part III April 11th Project Status:
 
 Completed:
@@ -25,6 +29,10 @@ Conor Sonoda
   - Technical Writing
 
 Link to Repo: https://github.com/ICS427TheWorkoutApp/TheWorkoutApp
+
+
+
+
 
 Part II March 28th Project Status:
 
