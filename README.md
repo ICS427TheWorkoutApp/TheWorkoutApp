@@ -24,8 +24,11 @@ Closing thought:
 Completing this small project allows us to actively utilize software security topics through hands on experience to increase our understanding of the relation of certain security topics. The biggest challenges throughout this assignment were planning for the project and applying knowledge that we learned in class toward testing, designing and other aspects of the program
 
 Repo Link: https://github.com/ICS427TheWorkoutApp/TheWorkoutApp
+
 Documentation: https://github.com/ICS427TheWorkoutApp/TheWorkoutApp/blob/main/README.md
+
 Wiki: https://github.com/ICS427TheWorkoutApp/TheWorkoutApp/wiki
+
 Release: https://github.com/ICS427TheWorkoutApp/TheWorkoutApp/releases
 
 Part III April 11th Project Status:
